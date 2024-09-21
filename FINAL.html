@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mistaart - Data Analysis, Web Design, Graphics & Music</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Richard&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F5F5DC; /* Cream */
+            color: #006400; /* Dark Green */
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease;
+        }
+        h1, h2, h3 {
+            font-family: 'Poor Richard', serif;
+        }
+        header {
+            background-color: #006400;
+            color: #F5F5DC;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #006400;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-family: 'Arial Black', sans-serif;
+        }
+        nav a:hover {
+            color: #228B22; /* Lighter Green */
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        .services {
+            display: flex;
+            justify-content: center; /* Center the services in one row */
+            flex-wrap: nowrap; /* Ensure services are in one row */
+            overflow-x: auto; /* Allow horizontal scrolling if needed */
+        }
+        .service {
+            border: 2px solid #006400;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: 22%;
+            transition: transform 0.2s;
+        }
+        .service img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .service:hover {
+            transform: scale(1.05);
+        }
+        .service button {
+            background-color: #006400;
+            color: #F5F5DC;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .service button:hover {
+            background-color: #228B22;
+        }
+        footer {
+            background-color: #006400;
+            color: #F5F5DC;
+            text-align: center;
+            padding: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 500px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #006400;
+            color: #F5F5DC;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #228B22;
+        }.portfolio-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .portfolio-item {
+            border: 2px solid #006400;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: 22%;
+            text-align: center;
+        }
+
+        .portfolio-item img, .portfolio-item video {
+             width: 100%;
+             height: auto;
+             border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mistaart - Data Analysis | Web Design | Graphics & Music</h1>
+    <p>Westlands, BMW Building, 17th Floor | Email: mistaart1@gmail.com</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Mistaart</h2>
+    <p>Welcome to Mistaart! We specialize in data analysis, web design, video animations, and graphics design. Our goal is to deliver modern, tech-driven solutions to businesses.</p>
+</section>
+
+<section id="services">
+    <h2 style="text-align: center;">Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_Data_Analysis.jpg" alt="Data Analysis">
+            <h3>Data Analysis</h3>
+            <p>We provide comprehensive data analysis services to help businesses make informed decisions.</p>
+            <button onclick="alert('More details about Data Analysis!')">More Details</button>
+        </div>
+        <div class="service">
+            <img src="https://designsvalley.com/wp-content/uploads/2023/10/what-is-web-design.png" alt="Web Design">
+            <h3>Web Design</h3>
+            <p>Our web design solutions are tailored to create user-friendly and visually appealing websites.</p>
+            <button onclick="alert('More details about Web Design!')">More Details</button>
+        </div>
+        <div class="service">
+            <img src="https://www.vegascreativesoftware.com/fileadmin/user_upload/seo/keyword/best_professional_video_editing_software/i_d8a353/header-mobile.jpg" alt="Video Animations">
+            <h3>Video Animations</h3>
+            <p>We create engaging video animations to enhance your marketing and communication strategies.</p>
+            <button onclick="alert('More details about Video Animations!')">More Details</button>
+        </div>
+        <div class="service">
+            <img src="https://pixel77.com/wp-content/uploads/2018/10/1934823-e1540532501723.jpg" alt="Graphics Design">
+            <h3>Graphics Design</h3>
+            <p>Our graphics design services include branding, advertising, and promotional materials.</p>
+            <button onclick="alert('More details about Graphics Design!')">More Details</button>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <p>Check out some of our latest projects in data analysis, web development, and design!</p>
+    <div class="portfolio-items">
+        <div class="portfolio-item">
+            <img src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1726876800&semt=ais_hybrid" alt="Project 1">
+            <h3>LOGO</h3>
+            <p>This was my first logo design, as you ,ight tell, I have not been used any logo for my website as it is work on progress.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJXkKKRnhHYxn-AjCAm6vdlYfYyRjezEQk_g&s" alt="Project 2">
+            <h3>Branding</h3>
+            <p>This has been a loyal client.</p>
+        </div>        
+        <div class="portfolio-item">
+            <iframe width="300" height="269" src="https://www.youtube.com/embed/wz8coAGgkZY" frameborder="0" allowfullscreen></iframe>
+            <h3>Mistaart Intro Video</h3>
+            <p>This is my all-time intro skit on my videos.</p>
+        </div>
+        
+        <!-- Add more portfolio items as needed -->
+    </div> 
+</section>
+
+
+<section id="blog">
+    <h2>Blog</h2>
+    <p>Coming soon! Stay tuned for our latest articles on tech, design, and business.</p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Mistaart</h2>
+    <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Mistaart. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
